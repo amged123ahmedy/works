@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<!--=========================Nav=============================-->
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"><span>P</span>RO<span>F</span>OLIO</div>
+      <nav>
+        <ul>
+          <li><a [routerLink]="'/home'">HOME</a></li>
+          <li><a [routerLink]="'/service'">SERVICES</a></li>
+          <li><a [routerLink]="'/projects'">PROJECTS</a></li>
+          <li><a href="#">PAGES</a></li>
+          <li><a [routerLink]="'/contact'">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="toggle_btn" (click)="toggleDropdown()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu" [class.open]="isDropdownOpen">
+      <ul>
+        <li><a [routerLink]="'/home'">HOME</a></li>
+        <li><a [routerLink]="'/service'">SERVICES</a></li>
+        <li><a [routerLink]="'/projects'">PROJECTS</a></li>
+        <li><a href="#">PAGES</a></li>
+        <li><a [routerLink]="'/contact'">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>  
+</body>
+
