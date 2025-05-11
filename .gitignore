@@ -42,6 +42,10 @@ testem.log
 Thumbs.db
 
 node_modules/
-dist/
 .env
 .DS_Store
+dist/
+docs/
+root/
+
+
