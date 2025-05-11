@@ -44,8 +44,8 @@ Thumbs.db
 node_modules/
 .env
 .DS_Store
-dist/
-docs/
-root/
+# dist/
+# docs/
+# root/
 
 
