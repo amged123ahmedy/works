@@ -1,14 +1,13 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ProjectComponent } from './project/project.component';
-import { SeviceComponent } from './sevice/sevice.component';
-import { ContactComponent } from './contact/contact.component';
-import { ProjectDetailsComponent } from './project-details/project-details.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { FaqComponent } from './faq/faq.component';
-import { FilleComponent } from './fille/fille.component';
-
+import { HomeComponent } from './components/home/home.component';
+import { ProjectComponent } from './components/project/project.component';
+import { SeviceComponent } from './components/sevice/sevice.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { PricingComponent } from './components/pricing/pricing.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { FilleComponent } from './components/fille/fille.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -21,4 +20,4 @@ export const routes: Routes = [
     { path: 'pricing', component: PricingComponent },
     { path: 'faq', component: FaqComponent },
     { path: 'fille', component: FilleComponent },
-]
+];
