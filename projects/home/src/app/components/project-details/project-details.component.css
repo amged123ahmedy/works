@@ -1,0 +1,264 @@
+/*===========================sec1============================*/
+body{
+  margin: 0;
+}
+.projectdetails-header {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f3f0; 
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .breadcrumb {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumb span {
+    color: orange;
+    margin: 0 5px;
+  }
+  
+  .projectdetails-header h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #000;
+    margin: 0;
+  }
+  
+  .projectdetails-header h1 .highlight {
+    color: #000; 
+  }
+
+/*===========================sec2============================*/
+
+
+  
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .left-section {
+    width: 60%;
+    justify-content: center;
+    max-width: 500px;
+  }
+  
+  .category {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  
+  .star {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    color: #f57c00;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0 20px;
+  }
+  
+  .description {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .right-section {
+    width: 35%;
+    background-color: #f5f3f0;
+    padding: 30px;
+    width: 250px;
+    height: fit-content;
+  }
+  
+  .right-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .info p {
+    margin: 15px 0;
+  }
+  
+  .info span {
+    color: #f57c00;
+    font-weight: bold;
+  }
+  
+  /*===========================sec2============================*/
+
+  
+  
+  .main-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 40px;
+  }
+  
+  .content-section {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1 1 45%;
+  }
+  
+  .column h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .column p {
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .challenges {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .challenges li {
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .challenges i {
+    color: #f57c00;
+    margin-right: 10px;
+  }
+  
+  .share {
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  .share a  i {
+    font-size: 18px;
+    border-radius: 50%;
+    color: #f3f2ef;
+    background-color: #f57c00;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    margin: 0 5px;
+  }
+  
+  .share a i:hover {
+    color: white;
+    background-color: #000;
+  }
+  /*=========================== Responsive ============================*/
+
+@media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 90%;
+      max-width: 100%;
+    }
+  
+    .right-section {
+      margin-top: 20px;
+    }
+  
+    .project-header h1 {
+      font-size: 32px;
+    }
+  
+    .title {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projectdetails-header {
+      padding: 60px 10px;
+    }
+  
+    .project-header h1 {
+      font-size: 28px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .content-section {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .column {
+      flex: 1 1 100%;
+    }
+  
+    .share a i {
+      margin: 0 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projectdetails-header {
+      padding: 40px 10px;
+    }
+  
+    .project-header h1 {
+      font-size: 24px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .right-section {
+      padding: 20px;
+    }
+  
+    .share a i {
+      width: 18px;
+      height: 18px;
+      font-size: 10px;
+      padding: 4px;
+    }
+  }
+  

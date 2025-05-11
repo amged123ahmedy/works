@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<!--=========================Nav=============================-->
+<header>
+  <div class="container">
+    <div class="logo"><span>P</span>RO<span>F</span>OLIO</div>
+    <nav>
+      <ul>
+        <li><a routerLink="/home">HOME</a></li>
+        <li><a routerLink="/service">SERVICES</a></li>
+        <li class="project_drop">
+          <a href="#">PROJECTS
+            <i style="padding-left: 3px;" class="fa-solid fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown_menu_project">
+            <li><a routerLink="/projects">Projects</a></li>
+            <li><a routerLink="/project-details">Project Details</a></li>
+          </ul>
+        </li>
+        <li class="project_drop">
+          <a href="#">PAGES
+            <i style="padding-left: 3px;" class="fa-solid fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown_menu_project">
+            <li><a routerLink="/About-me">About me</a></li>
+            <li><a routerLink="/pricing">Pricing</a></li>
+            <li><a routerLink="/faq">FAQ</a></li>
+            <li><a routerLink="/fille">404</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="/contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div class="toggle_btn" (click)="toggleDropdownMenu('menu')">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="dropdown_menu" [class.open]="dropdownOpen.menu">
+    <ul>
+      <li><a routerLink="/home">HOME</a></li>
+      <li><a routerLink="/service">SERVICES</a></li>
+      <li class="dropdown">
+        <a href="#" (click)="toggleDropdownMenu('projects'); $event.preventDefault()">
+          PROJECTS <i class="fa-solid fa-chevron-down"></i>
+        </a>
+        <ul *ngIf="dropdownOpen.projects">
+          <li><a routerLink="/projects">Projects</a></li>
+          <li><a routerLink="/project-details">Project Details</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" (click)="toggleDropdownMenu('pages'); $event.preventDefault()">
+          PAGES <i class="fa-solid fa-chevron-down"></i>
+        </a>
+        <ul *ngIf="dropdownOpen.pages">
+          <li><a routerLink="/About-me">About me</a></li>
+          <li><a routerLink="/pricing">Pricing</a></li>
+          <li><a routerLink="/faq">FAQ</a></li>
+          <li><a routerLink="/fille">404</a></li>
+        </ul>
+      </li>
+      <li><a routerLink="/contact">CONTACT</a></li>
+    </ul>
+  </div>
+</header>
