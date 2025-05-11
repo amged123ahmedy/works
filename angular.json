@@ -27,9 +27,17 @@
               }
             ],
             "styles": [
-              "projects/home/src/styles.css"
+              "projects/home/src/styles.css",
+              "node_modules/aos/dist/aos.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/aos/dist/aos.js"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/home/src"
+              ]
+            },
             "server": "projects/home/src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -90,9 +98,12 @@
               }
             ],
             "styles": [
-              "projects/home/src/styles.css"
+              "projects/home/src/styles.css",
+              "node_modules/aos/dist/aos.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js"
+            ]
           }
         }
       }

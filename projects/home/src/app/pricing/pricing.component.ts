@@ -4,13 +4,12 @@ import { CommonModule } from '@angular/common';
 declare const AOS: any;
 
 @Component({
-  selector: 'app-sevice',
-  standalone: true,
+  selector: 'app-pricing',
   imports: [CommonModule],
-  templateUrl: './sevice.component.html',
-  styleUrls: ['./sevice.component.css']
+  templateUrl: './pricing.component.html',
+  styleUrl: './pricing.component.css'
 })
-export class SeviceComponent implements AfterViewInit {
+export class PricingComponent implements AfterViewInit {
   selectedIndex: number | null = null;
 
   faqs = [

@@ -1,0 +1,324 @@
+/*===========================sec1============================*/
+.pricing-header {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f3f0; 
+    font-family: Arial, sans-serif;
+  }
+  
+  .breadcrumb {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumb span {
+    color: orange;
+    margin: 0 5px;
+  }
+  
+  .pricing-header h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #000;
+    margin: 0;
+  }
+  
+  .pricing-header h1 .highlight {
+    color: #000; 
+  }
+
+   /*================================sec 2 ==============================*/
+
+  .pricing-section {
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .pricing-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .pricing-section p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #666;
+  }
+
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background: #f7f6f3;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+    
+  }
+
+ 
+
+  .card.highlight {
+    background: #000;
+    color: #fff;
+  }
+
+  .card h3 {
+    margin: 0 0 10px;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: inherit;
+  }
+
+  .features {
+    margin: 20px 0;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    margin: 10px 60px;
+    
+  }
+
+  .feature::before {
+    content: "✔";
+    color: #f97316;
+    margin-right: 10px;
+  }
+
+  .price {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .month {
+    font-size: 14px;
+    color: #999;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #f97316;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0px;
+    font-weight: bold;
+  }
+  .button:hover{
+    color: white;
+    background-color: #000;
+    transition: 0.8s;
+  }
+
+  .highlight .button {
+    background: #f97316;
+  }
+  .highlight .button:hover{
+    background: white;
+    color: #000;
+    transition: 0.8s;
+  }
+
+  /*================================sec 3 ==============================*/
+
+  
+  
+  .process-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #000;
+    margin: 0;
+  }
+  
+  .section-subtitle {
+    color: #f97316;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #f4f3f0;
+  }
+  
+  .section-description {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #ccc;
+  }
+  
+  .process-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .card {
+    background-color: #f7f5f2;
+    color: #000;
+    width: 300px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .card .icon i{
+    font-size: 40px;
+    color: #f97316;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .step-number {
+    display: inline-block;
+    background-color: #f97316;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin-top: 20px;
+  }
+
+  /*================================sec 4 ==============================*/
+
+  .faq-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 40px;
+    gap: 40px;
+    margin: 0 50px;
+  }
+  
+  .faq-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  
+  .faq-left h5 {
+    color: #f97316;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .faq-left h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .faq-left p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  .faq-left .button {
+    display: inline-block;
+    background: #f97316;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .faq-left .button:hover {
+    background-color: #000;
+    color: white;
+  }
+  
+  .faq-right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .faq-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .faq-item:hover {
+    background: #f9f9f9;
+  }
+  
+  .faq-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .faq-item i {
+    color: #f97316;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item i.open {
+    transform: rotate(90deg);
+  }
+  
+  .answer {
+    margin-top: 12px;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

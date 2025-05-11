@@ -67,14 +67,16 @@ nav ul {
 }
 
 nav ul li {
+  position: relative;
   margin: 0 10px;
 }
 
 nav ul li a {
   padding: 10px;
+  display: block;
 }
 
-/* Toggle Button */
+/* Toggle Button (for mobile) */
 .toggle_btn {
   width: 40px;
   font-size: 20px;
@@ -83,20 +85,20 @@ nav ul li a {
   display: none;
 }
 
-/* Dropdown Menu (Mobile) */
+/* Dropdown Menu (Mobile menu container) */
 .dropdown_menu {
-  display: none;
+  display: block;
   position: absolute;
   top: 80px;
   left: 2rem;
   width: calc(100% - 4rem);
-  max-width: 300px;
-  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
   height: 0;
-  transition: height 0.3s ease;
+  transition: height 0.3s ease, padding 0.3s ease;
 }
 
 .dropdown_menu.open {
@@ -120,7 +122,50 @@ nav ul li a {
   padding: 0.5rem;
 }
 
-/* Responsive styles */
+/* Projects Submenu (Desktop dropdown) */
+nav ul li.project_drop {
+  position: relative;
+}
+
+nav ul li.project_drop .dropdown_menu_project {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 200px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+nav ul li.project_drop .dropdown_menu_project li a {
+  color: #333;
+  padding: 10px;
+}
+
+nav ul li.project_drop .dropdown_menu_project li a:hover {
+  color: #FF6400;
+  display: block;
+}
+
+/* Show Projects submenu on hover (Desktop only) */
+@media (min-width: 769px) {
+  nav ul li.project_drop:hover .dropdown_menu_project {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: block;
+  }
+}
+
+/* Responsive styles (Mobile) */
 @media (max-width: 768px) {
   .toggle_btn {
     display: block;

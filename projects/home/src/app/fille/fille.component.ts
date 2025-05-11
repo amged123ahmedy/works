@@ -3,13 +3,12 @@ import { Component, AfterViewInit } from '@angular/core';
 declare const AOS: any;
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-fille',
   imports: [],
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'],
-  standalone: true
+  templateUrl: './fille.component.html',
+  styleUrl: './fille.component.css'
 })
-export class ContactComponent implements AfterViewInit {
+export class FilleComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     if (typeof AOS !== 'undefined') {
       AOS.init();

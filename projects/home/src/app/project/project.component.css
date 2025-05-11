@@ -1,4 +1,7 @@
 /*===========================sec1============================*/
+body{
+  margin: 0;
+}
 .project-header {
     text-align: center;
     padding: 100px 20px;
