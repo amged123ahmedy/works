@@ -1,14 +1,14 @@
 {
   "routes": {
-    "/final---project": {},
-    "/final---project/About-me": {},
-    "/final---project/contact": {},
-    "/final---project/faq": {},
-    "/final---project/fille": {},
-    "/final---project/home": {},
-    "/final---project/pricing": {},
-    "/final---project/project-details": {},
-    "/final---project/projects": {},
-    "/final---project/service": {}
+    "/": {},
+    "/About-me": {},
+    "/contact": {},
+    "/faq": {},
+    "/fille": {},
+    "/home": {},
+    "/pricing": {},
+    "/project-details": {},
+    "/projects": {},
+    "/service": {}
   }
 }
