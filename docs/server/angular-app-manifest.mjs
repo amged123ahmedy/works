@@ -56,10 +56,10 @@ export default {
     'service/index.html': {size: 41779, hash: '08be88ad7db727a2599b8a4e15361a1bb2a5c9528da9e601166b9c80c39eebaa', text: () => import('./assets-chunks/service_index_html.mjs').then(m => m.default)},
     'project-details/index.html': {size: 24545, hash: 'd879fb1698279b17cf29d24dbe928b3d12f3d35559e444f139e7979f0fa00806', text: () => import('./assets-chunks/project-details_index_html.mjs').then(m => m.default)},
     'contact/index.html': {size: 26311, hash: '90e4a55914556ea1ba31f5010683ac6b0a3715dd0f91c666ccd774660b8c77d8', text: () => import('./assets-chunks/contact_index_html.mjs').then(m => m.default)},
-    'pricing/index.html': {size: 27784, hash: 'c5e57796979818ef8f658a06cad88929c80bf5b975795e414565dd11c2dba1f2', text: () => import('./assets-chunks/pricing_index_html.mjs').then(m => m.default)},
     'About-me/index.html': {size: 32394, hash: 'f1736417fd355272378c77110d4a0ecacade9f386347810040b49c77b5c724d1', text: () => import('./assets-chunks/About-me_index_html.mjs').then(m => m.default)},
     'fille/index.html': {size: 20087, hash: '52c6e8989aaf12203e56670fca5c61903819fd59d67fb3be1c687955a74d0c8b', text: () => import('./assets-chunks/fille_index_html.mjs').then(m => m.default)},
     'faq/index.html': {size: 27031, hash: 'fb9aa1960f343f4f264207a0350700e3183fc799a3742c98884121591d177f08', text: () => import('./assets-chunks/faq_index_html.mjs').then(m => m.default)},
+    'pricing/index.html': {size: 27784, hash: 'c5e57796979818ef8f658a06cad88929c80bf5b975795e414565dd11c2dba1f2', text: () => import('./assets-chunks/pricing_index_html.mjs').then(m => m.default)},
     'styles-PG4NTQGW.css': {size: 38589, hash: 'itqLFsi6nug', text: () => import('./assets-chunks/styles-PG4NTQGW_css.mjs').then(m => m.default)}
   },
 };
