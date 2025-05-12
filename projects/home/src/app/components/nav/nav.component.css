@@ -186,3 +186,13 @@ nav ul li.project_drop .dropdown_menu_project li a:hover {
     justify-content: space-between;
   }
 }
+@media (min-width: 769px) {
+  nav {
+    display: flex;
+  }
+
+  .toggle_btn,
+  .dropdown_menu {
+    display: none !important;
+  }
+}

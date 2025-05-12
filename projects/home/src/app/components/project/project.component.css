@@ -290,3 +290,138 @@ body{
     border-top: 1px solid #ddd;
     margin: 10px 0;
   }
+
+  /*=============== Responsive Media Queries ===============*/
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .services-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+
+  .service-box {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .service-box img {
+    width: 80px;
+    height: auto;
+  }
+
+  .contact-project-section h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .title h2 {
+    font-size: 26px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .service-box {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .services-section h1 {
+    font-size: 28px;
+  }
+
+  .contact-project-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .contact-project-section h2 {
+    font-size: 24px;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-header h1 {
+    font-size: 24px;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+  }
+
+  .title h2,
+  .services-section h1 {
+    font-size: 22px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .stat h2 {
+    font-size: 20px;
+  }
+
+  .certified {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .service-box {
+    padding: 15px;
+  }
+
+  .project-card .text h3 {
+    font-size: 18px;
+  }
+
+  .project-card .text p,
+  .project-card .text a {
+    font-size: 14px;
+  }
+}

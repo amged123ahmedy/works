@@ -705,3 +705,94 @@ body {
     transform: translateY(0);
   }
 }
+
+/*==================== Media Queries ====================*/
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .service-box {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .service-box img {
+    margin: 0 0 15px 0;
+    width: 100px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    margin: 0 20px;
+  }
+
+  .faq-left, .faq-right {
+    max-width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-section {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-header h1 {
+    font-size: 28px;
+  }
+
+  .services-header-2 h2 {
+    font-size: 24px;
+  }
+
+  .pricing-section h2 {
+    font-size: 24px;
+  }
+
+  .contact-info h2 {
+    font-size: 24px;
+  }
+
+  .faq-left h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .feature {
+    margin: 10px 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .faq-item-header {
+    font-size: 14px;
+  }
+
+  .answer {
+    font-size: 14px;
+  }
+
+  .feedback-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
