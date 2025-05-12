@@ -41,6 +41,3 @@ testem.log
 # OS generated files
 .DS_Store
 Thumbs.db
-
-# Keep /docs for GitHub Pages deployment
-# /docs ← this line has been removed as instructed
